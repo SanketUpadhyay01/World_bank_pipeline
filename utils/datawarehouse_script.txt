@@ -1,0 +1,23 @@
+use world_data;
+ 
+CREATE TABLE reporting_layer_data (
+
+    Country_Name VARCHAR(255),
+
+    Country_Code VARCHAR(10),
+
+    Region VARCHAR(100),
+
+    IncomeGroup VARCHAR(100),
+
+    Year VARCHAR(4),
+
+    Total_Population VARCHAR(50),
+    
+    Freshwater_Consumption VARCHAR(50),
+    
+    GDP_Data VARCHAR(50),
+
+    Total_Inflation DOUBLE
+
+);
