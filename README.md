@@ -26,8 +26,8 @@ The final transformed data is stored in a MySQL database for reporting purposes 
 ## Installation
 Clone the repository:
 ```
-git clone https://github.com/yourusername/etl-pipeline.git
-cd etl-pipeline
+git clone https://github.com/SanketUpadhyay01/World_bank_pipeline
+cd World_bank_pipeline
 ```
 
 Install the required packages:
@@ -35,7 +35,7 @@ Install the required packages:
 pip install -r requirements.txt
 ```
 
-Set up your MySQL database and create a database for the project.
+Set up your MySQL database by running scripts from the utils folder.
 
 Update the database connection settings in the .env file.
 

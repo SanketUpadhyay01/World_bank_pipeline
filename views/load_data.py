@@ -1,7 +1,6 @@
 
-import pymysql
 from dotenv import load_dotenv
-import os
+from model.database_connection import create_connection
 
 load_dotenv()
 
@@ -9,12 +8,7 @@ def mysql_load_data(transformed_data):
 
     """ Load cleaned and transformed data into warehouse for backup"""
 
-    connection = pymysql.connect(
-        host="localhost",
-        user="root",
-        password="root",
-        database="world_data"
-    )
+    connection = create_connection()
 
     # Get the number of rows
     rows = transformed_data.count()
@@ -30,3 +24,4 @@ def mysql_load_data(transformed_data):
 
     # Commit the transaction
     connection.commit()
+    connection.close()
